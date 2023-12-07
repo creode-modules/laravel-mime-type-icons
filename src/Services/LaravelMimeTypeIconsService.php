@@ -10,7 +10,7 @@ class LaravelMimeTypeIconsService
 
         $file = asset('assets/svg/'.config('laravel-mime-type-icon.style').'/' . $mimeType . '.svg');
 
-        if (!file_exists($file)) {
+        if (file_exists($file)) {
             throw new AssetNotFoundException('File does not exist: ' . $file);
         }
 
