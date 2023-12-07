@@ -4,9 +4,16 @@ namespace Creode\LaravelMimeTypeIcons\Services;
 
 class LaravelMimeTypeIconsService
 {
-    public static function getIcon($mimeType)
+    public static function getIcon(string $mimeType): string
     {
         $mimeType = str_replace(['/', '.'], '-', $mimeType);
-        return asset('assets/svg/'.config('laravel-mime-type-icon.style', 'square-o').'/' . $mimeType . '.svg');
+
+        $file = asset('assets/svg/'.config('laravel-mime-type-icon.style').'/' . $mimeType . '.svg');
+
+        if (!file_exists($file)) {
+            throw new AssetNotFoundException('File does not exist: ' . $file);
+        }
+
+        return $file;
     }
 }

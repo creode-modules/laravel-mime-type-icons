@@ -14,7 +14,9 @@ class LaravelMimeTypeIconsServiceProvider extends ServiceProvider
 
     public function register()
     {
-        //
+        $this->mergeConfigFrom(
+            __DIR__.'/../../config/laravel-mime-type-icon.php', 'laravel-mime-type-icon'
+        );
     }
 
     public function publishAssets()
