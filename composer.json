@@ -1,0 +1,33 @@
+{
+    "name": "creode/laravel-mime-type-icons",
+    "description": "Base module which is used for the DAM to create assets.",
+    "homepage": "https://github.com/creode-modules/laravel-mime-type-icons",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Creode",
+            "email": "contact@creode.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Creode\\LaravelMimeTypeIcons\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Creode\\LaravelMimeTypeIcons\\Providers\\LaravelMimeTypeIconsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
