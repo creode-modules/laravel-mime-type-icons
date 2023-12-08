@@ -23,7 +23,7 @@ class LaravelMimeTypeIconsServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../../assets/svg' => public_path('assets/svg'),
-        ], 'laravel-mime-type-icons');
+        ], 'laravel-assets');
     }
 
     public function publishConfig()
