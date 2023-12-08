@@ -8,10 +8,10 @@ You can install the package via composer:
 composer require creode/laravel-mime-type-icons
 ```
 
-You **must** publish the assets with:
+THe SVG assets are published to the public directory when **composer update** has been run. However you can publish them manually with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-mime-type-icons"
+php artisan vendor:publish --tag="laravel-assets"
 ```
 
 You can publish the config file with:
