@@ -2,6 +2,8 @@
 
 namespace Creode\LaravelMimeTypeIcons\Services;
 
+use Creode\LaravelMimeTypeIcons\Services\AssetNotFoundException;
+
 class LaravelMimeTypeIconsService
 {
     public static function getIcon(string $mimeType): string
