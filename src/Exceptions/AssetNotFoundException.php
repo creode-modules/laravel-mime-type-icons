@@ -1,6 +1,6 @@
 <?php
 
-namespace Creode\LaravelMimeTypeIcons\Services;
+namespace Creode\LaravelMimeTypeIcons\Exceptions;
 
 use Exception;
 

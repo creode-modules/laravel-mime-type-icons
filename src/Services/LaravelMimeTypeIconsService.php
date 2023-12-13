@@ -2,7 +2,7 @@
 
 namespace Creode\LaravelMimeTypeIcons\Services;
 
-use Creode\LaravelMimeTypeIcons\Services\AssetNotFoundException;
+use Creode\LaravelMimeTypeIcons\Exceptions\AssetNotFoundException;
 
 class LaravelMimeTypeIconsService
 {
