@@ -43,6 +43,9 @@ return LaravelMimeTypeIconsService::getIcon($value);
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
+## Attributions/Legal Bit
+Icon SVG's for this library were provided by the following repository: https://github.com/dmhendricks/file-icon-vectors. We have just modified the filenames to suit our needs.
+
 ## Credits
 
 - [Creode](https://github.com/creode)
