@@ -1,7 +1,6 @@
 <?php
 
 namespace Creode\LaravelMimeTypeIcons\Providers;
-use Creode\LaravelMimeTypeIcons\Services\LaravelMimeTypeIconsService;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelMimeTypeIconsServiceProvider extends ServiceProvider
